@@ -23,7 +23,7 @@ In addition, the application includes a save button labeled 'Save As' to store t
             textcontent = str(self.entry_right.get())
             with open(filename, 'w+') as file:
                 file.write(textcontent)
-            print("File saved as ", filename)
+            print("File saved", filename)
         else:
             print("File save has been cancelled")
 ```
