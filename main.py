@@ -82,7 +82,7 @@ class CashFive(customtkinter.CTk):
             textcontent = str(self.entry_right.get())
             with open(filename, 'w+') as file:
                 file.write(textcontent)
-            print("File saved as ", filename)
+            print("File saved", filename)
         else:
             print("File save has been cancelled")
 
