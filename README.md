@@ -18,7 +18,7 @@ In addition, the application includes a save button labeled 'Save As' to store t
 
 ```Python
     def save_file_as(self):
-        filename = filedialog.asksaveasfilename(initialdir="r(C:\Documents", title="Save File As", defaultextension=".txt", filetypes=(('Text Documents,' '.txt*'), ("All Files", '*.*')))
+        filename = filedialog.asksaveasfilename(initialdir=r"C:\Documents", title="Save File As", defaultextension=".txt", filetypes=(('Text Documents,' '.txt*'), ("All Files", '*.*')))
         if filename:
             textcontent = str(self.entry_right.get())
             with open(filename, 'w+') as file:
