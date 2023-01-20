@@ -1,5 +1,3 @@
-# Script written by Jamil Matheny
-
 import customtkinter
 import random
 from tkinter import filedialog, END
@@ -50,7 +48,7 @@ class CashFive(customtkinter.CTk):
         self.appearance_mode_label = customtkinter.CTkLabel(master=frame_left, text="Appearance Mode:")
         self.appearance_mode_label.grid(row=5, column=0, padx=20, pady=(10, 0))
         self.appearance_mode_label.place(relx=0.5, rely=0.6, anchor="center")
-        self.appearance_mode_optionmenu = customtkinter.CTkOptionMenu(master=frame_left, values=["Light", "Dark", "System"], command=self.change_appearance_mode_event)
+        self.appearance_mode_optionmenu = customtkinter.CTkOptionMenu(master=frame_left, values=["Light", "Dark",  "System"], command=self.change_appearance_mode_event)
         self.appearance_mode_optionmenu.grid(row=6, column=0, padx=20, pady=(10, 10))
         self.appearance_mode_optionmenu.place(relx=0.5, rely=0.75, anchor="center")
 
@@ -77,7 +75,7 @@ class CashFive(customtkinter.CTk):
 
     # Function on saving the file document and checking whether the user will save the data or not.
     def save_file_as(self):
-        filename = filedialog.asksaveasfilename(initialdir="r(C:\Documents", title="Save File As", defaultextension=".txt", filetypes=(('Text Documents,' '.txt*'), ("All Files", '*.*')))
+        filename = filedialog.asksaveasfilename(initialdir=r"C:\Documents", title="Save File As", defaultextension=".txt", filetypes=(("Text Documents", '.txt*'), ("All Files", '*.*')))
         if filename:
             textcontent = str(self.entry_right.get())
             with open(filename, 'w+') as file:
