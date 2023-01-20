@@ -77,7 +77,7 @@ class CashFive(customtkinter.CTk):
 
     # Function on saving the file document and checking whether the user will save the data or not.
     def save_file_as(self):
-        filename = filedialog.asksaveasfilename(initialdir="r(C:\Documents", title="Save File As", defaultextension=".txt", filetypes=(('Text Documents,' '.txt*'), ("All Files", '*.*')))
+        filename = filedialog.asksaveasfilename(initialdir=r"C:\Documents", title="Save File As", defaultextension=".txt", filetypes=(('Text Documents,' '.txt*'), ("All Files", '*.*')))
         if filename:
             textcontent = str(self.entry_right.get())
             with open(filename, 'w+') as file:
