@@ -84,7 +84,7 @@ class CashFive(customtkinter.CTk):
         else:
             print("File save has been cancelled")
 
-# This is run the script directly. Not when the script is imported from one module to another script.
+# This is run the script directly and not when the script is imported from one module to another script.
 if __name__ == "__main__":
     root = CashFive()
     root.mainloop()
