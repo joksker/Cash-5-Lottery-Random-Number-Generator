@@ -14,7 +14,7 @@ A random number generator for the Cash Five lottery game. This script uses the '
         return numbers
 ```
 
-In addition, the application includes a save button labeled 'Save As' to store the 5 generated random numbers in a text file with using the filedialog library built-in Python. It also allows the user to choose what theme to use 'Light, Dark, or System' as a customtkinter widget. 
+In addition, the application includes a save button labeled 'Save As' to store the 5 generated random numbers in a text file with using the filedialog library built-in Python. 
 
 ```Python
     def save_file_as(self):
