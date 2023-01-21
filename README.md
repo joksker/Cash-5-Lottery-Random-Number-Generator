@@ -29,10 +29,10 @@ In addition, the application includes a save button labeled 'Save As' to store t
 ```
 
 ## Requirements
-customtkinter
-filedialog
-tkinter
-random
+* customtkinter
+* filedialog
+* tkinter
+* random
 
 
 ## Here's a video demo of the application
