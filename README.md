@@ -28,6 +28,13 @@ In addition, the application includes a save button labeled 'Save As' to store t
             print("File save has been cancelled")
 ```
 
+## Requirements
+customtkinter
+filedialog
+tkinter
+random
+
+
 ## Here's a video demo of the application
 https://user-images.githubusercontent.com/36749450/213258932-96a9463c-6f99-407a-bd77-b795b7eb1f51.mp4
 
